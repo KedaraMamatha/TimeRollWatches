@@ -47,5 +47,16 @@
     <artifactId>h2</artifactId>
     <version>1.4.192</version>
 </dependency>
+<<<<<<< HEAD
+=======
+
+<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.7.5</version>
+</dependency>
+
+>>>>>>> initial commit for Backend using DAO's
   </dependencies>
 </project>

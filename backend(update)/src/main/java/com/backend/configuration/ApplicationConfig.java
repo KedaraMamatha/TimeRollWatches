@@ -15,8 +15,15 @@ import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+<<<<<<< HEAD
 import com.backend.model.Product;
 import com.backend.model.Users;
+=======
+import com.backend.model.CategoryModel;
+import com.backend.model.ProductModel;
+import com.backend.model.SupplierModel;
+import com.backend.model.UsersModel;
+>>>>>>> initial commit for Backend using DAO's
 
 
 @Configuration
@@ -50,8 +57,15 @@ public class ApplicationConfig {
 	{
 		 LocalSessionFactoryBuilder localSessionFactoryBuilder=new LocalSessionFactoryBuilder(dataSource);
 		 localSessionFactoryBuilder.addProperties(getProperties());
+<<<<<<< HEAD
 		localSessionFactoryBuilder.addAnnotatedClasses(Users.class);
 		localSessionFactoryBuilder.addAnnotatedClasses(Product.class);
+=======
+		localSessionFactoryBuilder.addAnnotatedClasses(UsersModel.class);
+	/*	localSessionFactoryBuilder.addAnnotatedClasses(ProductModel.class);
+		localSessionFactoryBuilder.addAnnotatedClasses(CategoryModel.class);
+		localSessionFactoryBuilder.addAnnotatedClasses(SupplierModel.class);*/
+>>>>>>> initial commit for Backend using DAO's
 		 return localSessionFactoryBuilder.buildSessionFactory();
 	}
 	@Autowired
