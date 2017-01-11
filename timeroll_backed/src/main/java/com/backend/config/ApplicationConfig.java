@@ -24,6 +24,10 @@ public class ApplicationConfig {
 	@Bean(name="datasource")
 	public DataSource getDataSource()
 	{
+<<<<<<< HEAD
+=======
+		System.out.println("i m from DataSource");
+>>>>>>> Integrated backend with frontend
 		DriverManagerDataSource driverManagerDataSource=new DriverManagerDataSource();
 		driverManagerDataSource.setUsername("system");
 		driverManagerDataSource.setPassword("system");
